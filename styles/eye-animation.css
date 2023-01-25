@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     width: 200px;
+    padding: 20px;
+    height: 300px;
 }
 .eye-animation {
     width: 150px;

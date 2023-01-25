@@ -1,0 +1,76 @@
+.box-4 {
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    padding: 20px;
+    height: 300px;
+}
+
+.face {
+    width: 150px;
+    aspect-ratio: 1.5/1;
+    background-color: red;
+    border-radius: 49% 51% 49% 51% / 31% 29% 71% 69%;
+    position: relative;
+}
+.eyes {
+    width: 20px;
+    aspect-ratio: 1/2;
+    background-color: white;
+    border-radius: 50% 50%;
+    display: grid;
+    place-items: center;
+    box-shadow: inset 2px 2px 2px black;
+}
+.left-eye {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.right-eye {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+.eye-balls {
+    width: 10px;
+    aspect-ratio: 1;
+    background-color: black;
+    border-radius: 50%;
+  }
+
+  .nose {
+    height: 12px;
+    width: 18px;
+    background-color: black;
+    border-radius: 50% / 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 5px black;
+  }
+  .mouth {
+    height: 20px;
+    aspect-ratio: 3/2;
+    background-color: white;
+    border-radius: 100% 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    box-shadow: inset 0px -2px 2px black;
+    overflow: hidden;
+  }
+  .mouth::after {
+    content: "";
+    height: 50%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    box-shadow: 2px 2px 5px black;
+  }
