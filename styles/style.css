@@ -28,10 +28,22 @@
     margin-top: 1rem;
     width: 100vw;
     height: 80vh;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 .box {
-    background-color: aquamarine;
-    box-shadow: 0 2px 2px black;
+    box-shadow: 0px 2px 2px black;
+    margin: 20px auto;
 }
+
+@media screen and (max-width: 992px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+@media screen and (max-width: 576px) {
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
