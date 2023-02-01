@@ -10,7 +10,7 @@
 .face {
     width: 150px;
     aspect-ratio: 1.5/1;
-    background-color: red;
+    /* background-color: rgb(255, 225, 0); */
     border-radius: 49% 51% 49% 51% / 31% 29% 71% 69%;
     position: relative;
 }
