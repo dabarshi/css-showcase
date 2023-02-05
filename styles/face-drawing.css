@@ -1,0 +1,38 @@
+.box-7 {
+    width: 200px;
+    padding: 20px;
+    height: 300px;
+    position: relative;
+    background-color: #fca;
+}
+
+.face-drawing {
+    --skin: #0079b5;
+    --cheek: #63b4e5;
+    width: 80%;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100% / 70% 70% 130% 130%;
+    background: 
+  /*     eyes */ radial-gradient(farthest-side, #fff 90%, #0000 0)
+        35% 55%/ 5% 5% no-repeat,
+      radial-gradient(farthest-side, #fff 90%, #0000 0) 65% 55%/ 5% 5% no-repeat,
+      radial-gradient(farthest-side, #000 90%, #0000 0) 30% 50%/ 15% 18% no-repeat,
+      radial-gradient(farthest-side, #000 90%, #0000 0) 70% 50%/ 15% 18% no-repeat,
+      radial-gradient(farthest-side, #fff 90%, #0000 0) 28% 48%/ 16% 20% no-repeat,
+      radial-gradient(farthest-side, #fff 90%, #0000 0) 72% 48%/ 16% 20% no-repeat,
+  /*     nose */
+            radial-gradient(farthest-side at 50% 30%, #000 10%, #000 0 50%, #0000 0)
+        50% 70%/ 20% 5% no-repeat,
+      
+      /*     mouth */
+        radial-gradient(farthest-side at 50% 0%, #0000 70%, #000 0 86%, #0000 0)
+        50% 80%/ 20% 5% no-repeat,
+      /*     cheek  */ radial-gradient(circle at 15% 70%, var(--cheek), #0000 40%),
+      radial-gradient(circle at 85% 70%, var(--cheek), #0000 40%), var(--skin);
+  
+    box-shadow: 2px 2px 2px #fff, 3px -3px 2px #fff, -3px -3px 2px #000;
+}
